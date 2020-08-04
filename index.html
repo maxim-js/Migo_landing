@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/bootstrap-grid.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <title>Migo</title>
+</head>
+
+<body>
+<header>
+    <div class="container" style="padding: 0">
+        <div class="menu__wrapper">
+            <div id="header" class="header">
+
+                <div class="header__item header__logo">
+                    <a href="index.html">
+                        <img class="header__logo picture" src="img/logo.png"/>
+                    </a>
+                </div>
+
+                <div class="header__item nav header_font">
+                    <li><a class="header__page down" href="#about">Суть migo</a></li>
+                    <li><a class="header__page down" href="#who">Для кого</a></li>
+                    <li><a class="header__page down" href="#rate">Тариф</a></li>
+                    <li><a class="header__page down" href="#how">Как подключиться</a></li>
+                    <li><a class="header__page down" href="#contact">Адреса</a></li>
+                </div>
+
+                <div class="header__item phone header_font">
+                    <a class="header__number" href="tel:88002000500">8 800 200 05 00</a>
+                    <a onclick="onAppear()" class="header__link" href="#popup">Заказать звонок</a>
+                </div>
+
+                <div class="header-nav-mob flex-center">
+                    <a class="header__icon" href="tel:88002000500"><img src="img/phone.svg" alt=""></a>
+                    <div class="burger-mob">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+
+                <nav class="main-menu">
+                    <a class="down menu__item" href="#about">Суть migo</a>
+                    <a class="down menu__item" href="#who">Для кого</a>
+                    <a class="down menu__item" href="#rate">Тариф</a>
+                    <a class="down menu__item" href="#how">Как подключиться</a>
+                    <a class="down menu__item" href="#contact">Адреса</a>
+                    <a class="down menu__item_phone menu__item" href="#contact">8 800 200 05 00</a>
+                    <a onclick="onAppear()" class="menu__item_link menu__item" href="#popup"><span class="menu__link">Заказать звонок</span></a>
+                </nav>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="preview" class="preview">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h1 class="preview__title">Мобильная связь на новом уровне</h1>
+                <p class="preview__subtitle">Выгодный тариф и твои <br> эксклюзивные привилегии!</p>
+                <a href="#contact" class="button btn_link preview__btn">
+                    Подключиться
+                </a>
+            </div>
+            <div class="preview__img col col-12 col-lg-6">
+                <img src="img/bubbles.png" class="picture preview__bubbles" alt="">
+                <img src="img/preview.png" class="picture preview__picture" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h2 class="about__title">Больше, чем просто мобильный оператор</h2>
+                <p class="about__subtitle subtitle_font">Подключившись к Migo, ты получаешь выгодную, качественную
+                    <br>
+                    мобильную связь и доступ к ресурсам, которые помогут изменить<br>
+                    твою жизнь!</p>
+                <a href="#contact" class="button btn_link about__btn">
+                    Подключиться
+                </a>
+                <img class="about__logo" class="picture" src="img/about__logo.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+
+                <h3 class="about__list">Сообщество единомышленников</h3>
+                <p class="about__list subtitle_font">Доступ к закрытому telegram-чату с успешными предпринимателями.
+                    Обсуждение и обмен мнениями по поводу бизнес-идей и начинаний. </p>
+
+                <h3 class="about__list">Бонусы от партнеров Migo</h3>
+                <p class="about__list subtitle_font">Скидки и выгодные предложения от компаний-партнеров Migo
+                    специально для пользователей нашей сети.</p>
+
+                <h3 class="about__list">Обучение и качественный досуг</h3>
+                <p class="about__list subtitle_font">Получение обучающих материалов и информации для личностного
+                    роста. Приглашения на закрытые онлайн-встречи предпринимателей.</p>
+                <a href="#contact" id="about__btn_second" class="button btn_link ">
+                    Подключиться
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="price">
+    <div class="container">
+        <div class="row flex-center price-block">
+            <div class="col-12 col-lg-6 price__img">
+                <img class="picture" src="img/price.png" alt="migo price">
+            </div>
+            <div class="col-12 col-lg-6 price__left">
+                <h2 class="price__title">Уникальная цена <br> на уникальные условия</h2>
+                <ul class="price__list subtitle_font">
+                    <li class="price__item"><span>Абонентская плата всего 300 руб в месяц</span></li>
+                    <li class="price__item"><span>300 минут для звонков на все номера России</span></li>
+                    <li class="price__item"><span>50 Гб быстрого интернета с широкой зоной покрытия</span></li>
+                    <li class="price__item"><span>Доступ в закрытый telegram-чат с предпринимателями</span></li>
+                    <li class="price__item"><span>Приглашения на встречи предпринимателей</span></li>
+                    <li class="price__item"><span>Выгодные условия от партнеров Migo</span></li>
+                </ul>
+                <div class="price__group">
+                    <a href="#contact" class="button btn_link">
+                        Подключиться
+                    </a>
+
+                    <a class="price__more" href="#rate">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="who" class="who">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 ">
+                <h2 class="who__title">Для тех, кто стремится к большему</h2>
+
+                <p class="who__subtitle subtitle_font">Migo для тех, кто готов ворваться в комьюнити
+                    предпринимателей, обмениваться мнениями и получать
+                    советы по делу.
+                </p>
+
+                <p class="who__subtitle subtitle_font">Для людей, открытых ко всему новому, готовых учиться,
+                    развиваться, бросать себе вызов и достигать новых высот!
+                </p>
+
+                <p class="who__subtitle subtitle_font">Присоединяйся!</p>
+
+                <a href="#contact" class="button btn_link">
+                    Подключиться
+                </a>
+
+                <div class="who__comment">
+                    <p class="who__comment">«Мир движется к формату комьюнити, сообществ по интересам. И я не хочу
+                        от него отставать!»</p>
+                    <h3 class="who__comment">- Азам Ходжаев</h3>
+                    <p class="who__comment_small">популярный блогер в youtube и instagram <a
+                            href="https://www.instagram.com/khodzhaev_azam" target="_blank">@khodzhaev_azam</a>
+                    </p>
+                </div>
+            </div>
+            <div class="who__picture col-12 col-lg-6">
+                <img class="picture" src="img/who.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="link">
+    <div class="container">
+
+        <div class="row link__block">
+            <div class="col-12 col-xl-7">
+                <h2 class="link__title">Будь на связи с успешными предпринимателями!</h2>
+            </div>
+            <div class="col-12 col-xl-5">
+                    <span class="link__subtitle subtitle_font">Услуги качественной мобильной связи и поддержка <br>
+                        единомышленников. Подключайся, общайся и развивайся вместе с Migo!</span>
+
+            </div>
+        </div>
+
+        <div class="row link__cards">
+            <div class="col-12 col-lg-4 link__card">
+                <img src="img/link1.svg" class="picture" alt="">
+                <h3 class="link__heading">Подключайся на самых лучших условиях</h3>
+                <div class="link__text subtitle_font">Выгодный тариф, с большим пакетом услуг за 300 руб в месяц,
+                    плюс доступ к закрытой информации и telegram-чату предпринимателей.
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 link__card">
+                <img src="img/link2.svg" class="picture" alt="">
+                <h3 class="link__heading">Общайся с единомышленниками</h3>
+                <div class="link__text subtitle_font">Получай ценные советы и новые знания. Уже в августе совершенно
+                    бесплатно тебе станет доступно 100 страниц пошагового плана по развитию личного бренда.
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 link__card">
+                <img src="img/link3.svg" class="picture" alt="">
+                <h3 class="link__heading">Генерируй идеи и воплощай их в жизнь</h3>
+                <div class="link__text subtitle_font">Окружение формирует нас, поэтому необходимо формировать свое
+                    окружение! Изуйчай новое, получай поддержку и действуй!
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="rate" class="rate">
+    <div class="container">
+        <div class="row">
+            <div class="rate__picture col-12 col-md-5 col-lg-6">
+                <img class="picture" class="rate__img" src="img/rate.png" alt="">
+            </div>
+            <div class="col-12 col-md-7 col-lg-6 rate__right">
+                <h2 class="rate__title">Все чисто за ЗОО</h2>
+                <p class="rate__subtitle subtitle_font rate__info">Абонентская плата 300 рублей в месяц.</p>
+
+                <p class="rate__subtitle subtitle_font"><span>50 </span>
+                    Гб быстрого мобильного интеренета. </p>
+                <p class="rate__small">После исчерпания пакета: 0,14 руб/Мб
+                </p>
+
+                <p class="rate__subtitle subtitle_font"><span>300 </span>мин на номера любых операторов.</p>
+                <p class="rate__small">После исчерпания пакета: 1,95 руб/мин.</p>
+
+                <p class="rate__subtitle subtitle_font"><span>50 </span>смс на все номера по всей России.</p>
+                <p class="rate__small">После исчерпания пакета: 1,95 руб/шт.
+                </p>
+
+                <a href="#contact" class="button btn_link rate__btn">
+                    Подключиться
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="how" class="how">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 how__left">
+                <h2 class="how__title">Как подключиться?</h2>
+
+                <p class="how__subtitle subtitle_font">Стать частью нашего сообщества просто!</p>
+
+                <p class="how__subtitle subtitle_font">Найди на карте ближайшую точку продаж и спроси на кассе
+                    нового мобильного оператора Migo. </p>
+                <p class="how__subtitle subtitle_font">Остались вопросы? Оставь контактные данные, менеджер
+                    перезвонит и подробно ответит на них.
+                </p>
+                <a onclick="onAppear()" class="button" href="#popup">
+                    <button class="btn_link how__btn">Свяжитесь со
+                        мной
+                    </button>
+                </a>
+            </div>
+            <div class="how__picture col-12 col-lg-6">
+                <div class="how__group">
+                    <div class="how_item how_left_xl how_xl"></div>
+                    <div class="how_item how_left_md how_md"></div>
+                    <div class="how_item how_left_sm how_sm"></div>
+                    <div class="how_item how_center"></div>
+                    <div class="how_item how_right_sm how_sm"></div>
+                    <div class="how_item how_right_md how_md"></div>
+                    <div class="how_item how_right_xl how_xl"></div>
+                </div>
+                <img class="how__picture picture" src="img/how.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="contact">
+    <div class="container ">
+        <div class="row contact__block">
+
+            <div class="contact__map col-12 col-lg-6">
+                <iframe id="iframe"
+                        src='https://yandex.ru/map-widget/v1/?um=constructor%3Afd49dd43b2c4e60c84c385314dbe7261778c0a9c062aacf70716634e5630e66c&amp;source=constructor" width="100%" frameborder="0"'
+                        width="100%" height="634px" frameborder="0"></iframe>
+            </div>
+            <div class="contact__wrapper col-12 col-lg-6">
+                <div class="address">
+                    <h2 class="contact__title">Где подключиться</h2>
+                    <ul class="contact__list">
+
+                        <li class="contact__item subtitle_font"><a id='map_1' style="color: #82DE00;"
+                                                                   onclick="onMap1()">г. Сергиев Посад, ул. Вифанская,
+                            д.29</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_2' onclick="onMap2()">г. Москва, ул.
+                            Шереметьевская, д.20А</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_3' onclick="onMap3()">г. Москва, пл.
+                            Комсомольская, д.2</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_4' onclick="onMap4()">г. Москва,
+                            Ленинский пр-т, 2</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_5' onclick="onMap5()">г. Москва, ш.
+                            Варшавское, д.87Б</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_6' onclick="onMap6()">г. Москва,
+                            Кутузовский проспект, д. 57</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_7' onclick="onMap7()">г. Москва, ул.
+                            Авиаконструктора Миля, д.вл. 7</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_8' onclick="onMap8()">г. Одинцово, ул.
+                            Маковского, д.2А</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_9' onclick="onMap9()">г. Красногорск, ул.
+                            Знаменская, д.5</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_10' onclick="onMap10()">МО, г. Серпухов,
+                            улица Советская, вл. 111</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_11' onclick="onMap11()">г. Можайск, ул.
+                            1-я Железнодорожная, д.43</a>
+                        </li>
+                        <li class="contact__item subtitle_font"><a id='map_12' onclick="onMap12()">г. Клин, ул.
+                            Карла Маркса, д.4</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="line"></div>
+<footer>
+    <div class="container footer__wrapper">
+        <div class=" footer__block">
+            <div class=" footer__logo">
+                <img class="picture footer__logo" src="img/logo.png" alt="">
+                <a class="footer__phone_left" href="tel:8002000500"> 8 800 200 05 00</a>
+            </div>
+            <div class="footer__about">2020 ООО «А-ЭДЖЕНСИ» Общество с ограниченной ответственностью «А-ЭДЖЕНСИ»
+                Юридический адрес: 123022 г. Москва, Звенигородское шоссе, д. 9/27, стр. 1, эт. 1, ком. 7 ИНН
+                7703581224 КПП 770301001 ОГРН 1197746470976
+            </div>
+            <div class="footer__phone">
+                <a class="footer__phone_right" href="tel:8002000500"> 8 800 200 05 00</a>
+            </div>
+            <div class="footer__arrow">
+                <a href="#preview" class="down">
+                    <div class="footer__return"><img src="img/Arrow.png" alt=""></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__info">
+        <div class="container">
+            <div class="footer__footer">
+                <div class="footer__info_item footer__company">
+                    © 2020 ООО «А-Эдженси»
+                </div>
+                <a class="footer__info_item" href="confid.html">
+                    Политика конфиденциальности
+                </a>
+                <a class="footer__info_item" target="_blank" href="https://rowstudio.ru/">
+                    Разработка сайта: ROW STUDIO
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="popup" id="popup">
+    <div class="popup-inner">
+        <div class="popup__text">
+            <h3 class="popup__title">Оставьте контактные данные<br> и мы свяжемся с&nbsp;вами!</h3>
+
+            <form class="form" action="mail.php" method="post">
+                <input type="hidden" name="form_sbmt" value="form_sbmt">
+                <div class="popup__item">
+                    <input class="popup__item_style" type="text" name="user_name" id="user_name" value=""
+                           placeholder="Введите имя">
+                </div>
+                <div class="popup__item">
+                    <input class="popup__item_style" type="email" name="user_email" id="user_email" value=""
+                           placeholder="Введите эл. почту*" required>
+                </div>
+                <div class="popup__item">
+                    <input class="popup__item_style" type="text" name="user_phone" value="" id="user_phone"
+                           placeholder="Телефон*" required>
+                </div>
+                <div class="popup__item">
+                        <textarea class="popup__item_style" name="user_text" id="user_text"
+                                  placeholder="Сообщение"></textarea>
+                </div>
+                <div class="popup__item ">
+                    <div class="popup__item_style">
+                        <input type="checkbox" name="confidence" id="confidence" value="" required>
+                        <label class="popup__item" for="confidence">Я согласен(-на) с <a href="confid.html"
+                                                                                        target="_blank"
+                                                                                        style="color:#82DE00">политикой обработки персональных
+                                    данных</a></label>
+                    </div>
+                </div>
+                <div class="popup__item popup__btn">
+                    <input class="popup__btn" name="send" type="submit" value="Отправить">
+                </div>
+            </form>
+
+            <div class="form-result">Спасибо, Ваша заявка отправлена. Мы свяжеимся с Вами в ближайшее время.</div>
+
+        </div>
+        <a class="popup__close" onclick="onDeletePopup()">
+            <img src="img/Cross.png" alt="">
+        </a>
+    </div>
+</div>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
